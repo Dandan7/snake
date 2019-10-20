@@ -1,0 +1,14 @@
+ div{
+     margin: 0;
+     padding: 0;
+     border: none;
+ }
+#map{
+    width: 800px;
+    height: 500px;
+    background-color: #ccc;
+    position: relative;
+}
+ h2{
+     color: red;
+ }

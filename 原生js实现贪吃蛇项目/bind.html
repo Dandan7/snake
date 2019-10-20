@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = 123;
+        function fn(){
+            var a= 666;
+            console.log(this.a);
+
+        }
+        // bind可以改变this的指向
+        fn();
+        var o={a:'abc'};
+        var fn1 = fn.bind(o);
+        fn1();
+    </script>
+</body>
+</html>
